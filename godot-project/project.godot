@@ -1,0 +1,19 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+
+config/name="fish-swim"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1152
+window/size/viewport_height=648
+window/size/resizable=true
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
