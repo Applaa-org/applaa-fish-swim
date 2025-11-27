@@ -1,0 +1,137 @@
+{
+  "game": {
+    "name": "Fish Swim Adventure",
+    "type": "2D",
+    "description": "A cute, relaxing 2D side-scrolling game where a pastel fish collects underwater treasures in a calm, bubble-filled ocean. No enemies or obstacles, just gentle swimming and collecting for points.",
+    "genre": "platformer",
+    "version": "1.0.0"
+  },
+  "settings": {
+    "window": {
+      "width": 1280,
+      "height": 720,
+      "resizable": true
+    },
+    "physics": {
+      "enabled": true,
+      "gravity": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    "rendering": {}
+  },
+  "scenes": [
+    {
+      "name": "Main",
+      "type": "2D",
+      "path": "res://scenes/Main.tscn",
+      "nodes": [
+        {
+          "name": "Root",
+          "type": "Node2D",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "children": [
+            {
+              "name": "Cute Fish",
+              "type": "CharacterBody2D",
+              "position": {
+                "x": 100,
+                "y": 300,
+                "z": 0
+              },
+              "children": [
+                {
+                  "name": "Sprite2D",
+                  "type": "Sprite2D",
+                  "position": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "properties": {
+                    "texture": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Camera",
+              "type": "Camera2D",
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 5
+              },
+              "properties": {}
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "type": "Camera2D",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    }
+  ],
+  "assets": {
+    "sprites": [
+      {
+        "name": "fish",
+        "path": "res://assets/sprites/fish.png",
+        "type": "character"
+      },
+      {
+        "name": "shell",
+        "path": "res://assets/sprites/shell.png",
+        "type": "collectible"
+      },
+      {
+        "name": "starfish",
+        "path": "res://assets/sprites/starfish.png",
+        "type": "collectible"
+      },
+      {
+        "name": "pearl",
+        "path": "res://assets/sprites/pearl.png",
+        "type": "collectible"
+      },
+      {
+        "name": "bubble_pack",
+        "path": "res://assets/sprites/bubble_pack.png",
+        "type": "collectible"
+      },
+      {
+        "name": "background",
+        "path": "res://assets/sprites/background.png",
+        "type": "background"
+      }
+    ],
+    "sounds": [
+      {
+        "name": "collect",
+        "path": "res://assets/sounds/pop.wav",
+        "type": "sfx"
+      },
+      {
+        "name": "swim",
+        "path": "res://assets/sounds/bubble_blip.wav",
+        "type": "sfx"
+      }
+    ],
+    "music": [
+      {
+        "name": "background",
+        "path": "res://assets/music/underwater_loop.ogg"
+      }
+    ]
+  },
+  "scripts": []
+}
